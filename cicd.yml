@@ -8,10 +8,10 @@ jobs:
     runs_on: ubuntu-latest
     steps:
       - name: code
-        run: echo "write the code"
+        run: echo "write code"
       - name: build
-        run: echo "build the code"
+        run: echo "build code"
       - name: Test
-        run: echo "test the code"
+        run: echo "test code"
       - name: Deploy
-        run: deploy the code
+        run: deploy code
