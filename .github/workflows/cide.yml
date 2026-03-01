@@ -14,4 +14,4 @@ jobs:
      - name: Test
        run: echo "test the code"
      - name: Deploy
-       run: deploy the code
+       run: echo "deploy the code"
