@@ -1,0 +1,28 @@
+---
+name: CI/CD Pipeline
+on:
+  workflow_dispatch: null
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: CODE
+        run: echo "Code the task"
+  build:
+    needs: [code]
+    runs-on: ubuntu-latest
+    steps:
+      - name: BUILD
+        run: echo "Build the code"
+  test:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: TEST
+        run: echo "Test the built code"
+  deploy:
+    needs: [test]
+    runs-on: ubuntu-latest
+    steps:
+      - name: DEPLOY
+        run: echo "Deploy the tested code"
