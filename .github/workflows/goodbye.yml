@@ -1,0 +1,14 @@
+#This github action will say goodbye
+name: Goodbye
+on: 
+ push:
+   branches: [main]
+
+jobs:
+   goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Say goodbye to users"
+        runs-on: echo "GoODBYE $USER"
+      - name: "Say goodbye to all"
+          runs-on: echo "Goodbye all"
