@@ -8,7 +8,7 @@ jobs:
    goodbye:
     runs-on: ubuntu-latest
     steps:
-      - name: "Say goodbye to users"
+      - name: "Say goodbye to all the users"
         runs-on: echo "GoODBYE $USER"
       - name: "Say goodbye to all"
           runs-on: echo "Goodbye all"
