@@ -1,0 +1,17 @@
+name: CI/CD PIPLEINE
+on:
+  push:
+    branches:
+      - main
+jobs:
+  ci_cd:
+    runs_on: ubuntu-latest
+    steps:
+      - name: code
+        run: echo "write the code"
+      - name: build
+        run: echo "build the code"
+      - name: Test
+        run: echo "test the code"
+      - name: Deploy
+        run: deploy the code
